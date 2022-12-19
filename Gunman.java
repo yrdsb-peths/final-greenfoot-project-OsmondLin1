@@ -30,18 +30,18 @@ public class Gunman extends Actor
     public void act()
     {
         if(Greenfoot.isKeyDown("Right")){
-            move(10);
+            move(6);
             facing = "right";
         }
         if(Greenfoot.isKeyDown("Left")){
-            move(-10);
+            move(-6);
             facing = "left";
         }
         if(Greenfoot.isKeyDown("Up")){
-            setLocation(getX(), getY() - 10);
+            setLocation(getX(), getY() - 6);
         }
         if(Greenfoot.isKeyDown("Down")){
-            setLocation(getX(), getY() + 10);
+            setLocation(getX(), getY() + 6);
         }
         
         animate();
