@@ -21,5 +21,6 @@ public class MyWorld extends World
         addObject(tryhard, 200, 200);
         Gunman gunman = new Gunman();
         addObject(gunman, 400, 200);
+        
     }
 }

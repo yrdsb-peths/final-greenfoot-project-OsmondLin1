@@ -31,6 +31,8 @@ public class TitleScreen extends World
         
         Label playertwo = new Label("Player 2" , 30);
         addObject(playertwo, 880, 320);
+        
+        
     }
 
     public void act(){
@@ -47,5 +49,9 @@ public class TitleScreen extends World
         addObject(tryhard, 125, 250);
         Gunman gunman = new Gunman();
         addObject(gunman, 885, 250);
+        WASD wasd = new WASD();
+        addObject(wasd, 115, 375);
+        Arrow arrow = new Arrow();
+        addObject(arrow, 885, 375);
     }
 }
