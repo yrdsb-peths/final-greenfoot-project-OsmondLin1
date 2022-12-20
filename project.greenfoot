@@ -29,10 +29,17 @@ dependency6.type=UsesDependency
 dependency7.from=TitleScreen
 dependency7.to=WASD
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 dependency8.from=TitleScreen
 dependency8.to=Arrow
 dependency8.type=UsesDependency
 dependency9.from=Gunman
+=======
+dependency8.from=Gunman
+dependency8.to=SimpleTimer
+dependency8.type=UsesDependency
+dependency9.from=Tryhard
+>>>>>>> fe12bbd2786393781a87076f1f68c92616a4f172
 dependency9.to=SimpleTimer
 dependency9.type=UsesDependency
 editor.fx.0.height=737
@@ -40,7 +47,11 @@ editor.fx.0.width=1042
 editor.fx.0.x=360
 editor.fx.0.y=26
 height=830
+<<<<<<< HEAD
 package.numDependencies=10
+=======
+package.numDependencies=9
+>>>>>>> fe12bbd2786393781a87076f1f68c92616a4f172
 package.numTargets=8
 project.charset=windows-1252
 publish.hasSource=false
