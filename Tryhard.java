@@ -41,13 +41,16 @@ public class Tryhard extends Actor
         if(Greenfoot.isKeyDown("s")){
             setLocation(getX(), getY() + 6);
         }
-        if(Greenfoot.isKeyDown("q")){
-            if(facing == "left")
-            {
-                spawnTBulletleft();
-            }
-            else{
-                spawnTBullet();
+        if (getWorld().getObjects(TBullet.class).isEmpty())
+        {
+            if(Greenfoot.isKeyDown("q")){
+                if(facing == "left")
+                {
+                    spawnTBulletleft();
+                }
+                else{
+                    spawnTBullet();
+                }
             }
         }
         
