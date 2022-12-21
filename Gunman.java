@@ -16,12 +16,13 @@ public class Gunman extends Actor
     public Gunman(){
         for(int i = 0; i < photos.length; i++){
             photos[i] = new GreenfootImage("images/player1_idle/tile00" + i + "-transformed.png");
+            photos[i].mirrorHorizontally();
             photos[i].scale(100, 100);
         } 
         
         for(int i = 0; i < photosleft.length; i++){
             photosleft[i] = new GreenfootImage("images/player1_idle/tile00" + i + "-transformed.png");
-            photosleft[i].mirrorHorizontally();
+            
             photosleft[i].scale(100, 100);
         }
         setImage(photos[0]);
@@ -31,11 +32,11 @@ public class Gunman extends Actor
     {
         if(Greenfoot.isKeyDown("Right")){
             move(6);
-            facing = "right";
+            facing = "left";
         }
         if(Greenfoot.isKeyDown("Left")){
             move(-6);
-            facing = "left";
+            facing = "right";
         }
         if(Greenfoot.isKeyDown("Up")){
             setLocation(getX(), getY() - 6);

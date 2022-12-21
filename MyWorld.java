@@ -20,7 +20,8 @@ public class MyWorld extends World
         Tryhard tryhard = new Tryhard();
         addObject(tryhard, 200, 200);
         Gunman gunman = new Gunman();
-        addObject(gunman, 400, 200);
+        addObject(gunman, 900, 200);
+        
         
     }
 }
