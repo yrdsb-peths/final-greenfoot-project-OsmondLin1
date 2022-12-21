@@ -16,12 +16,18 @@ public class TBullet extends Actor
         GreenfootImage tbullet = new GreenfootImage("images/TBullet.png");
         tbullet.scale(60, 60);
         setImage(tbullet);
+        
     }
     
     public void act()
     {
         int x = getX() + 5;
         int y = getY();
-        setLocation(x, y);// Add your action code here.
+        setLocation(x, y);
+        MyWorld world = (MyWorld) getWorld();
+        int bottomX = getWorld().getWidth();
+        if(getX() + 10 > bottomX) {
+            world.removeObject(this);
+        } 
     }
 }
