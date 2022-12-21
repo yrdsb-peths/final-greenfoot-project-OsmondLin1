@@ -20,6 +20,8 @@ public class TBullet extends Actor
     
     public void act()
     {
-        // Add your action code here.
+        int x = getX() + 5;
+        int y = getY();
+        setLocation(x, y);// Add your action code here.
     }
 }
