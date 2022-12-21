@@ -14,6 +14,7 @@ public class TBullet extends Actor
      */
     public TBullet(){
         GreenfootImage tbullet = new GreenfootImage("images/TBullet.png");
+        tbullet.mirrorHorizontally();
         tbullet.scale(60, 60);
         setImage(tbullet);
         
