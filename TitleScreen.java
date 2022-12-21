@@ -53,5 +53,7 @@ public class TitleScreen extends World
         addObject(wasd, 115, 375);
         Arrow arrow = new Arrow();
         addObject(arrow, 885, 375);
+        Shift shift = new Shift();
+        addObject(shift, 885, 440);
     }
 }
