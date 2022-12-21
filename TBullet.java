@@ -12,6 +12,12 @@ public class TBullet extends Actor
      * Act - do whatever the TBullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public TBullet(){
+        GreenfootImage tbullet = new GreenfootImage("images/TBullet.png");
+        tbullet.scale(60, 60);
+        setImage(tbullet);
+    }
+    
     public void act()
     {
         // Add your action code here.
