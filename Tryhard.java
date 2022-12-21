@@ -42,7 +42,13 @@ public class Tryhard extends Actor
             setLocation(getX(), getY() + 6);
         }
         if(Greenfoot.isKeyDown("q")){
-            spawnTBullet();
+            if(facing == "left")
+            {
+                spawnTBulletleft();
+            }
+            else{
+                spawnTBullet();
+            }
         }
         
         animate();
@@ -72,5 +78,12 @@ public class Tryhard extends Actor
         int x = getX() + 20;
         int y = getY() -13;
         world.addObject(tbullet, x, y);
+    }
+    public void spawnTBulletleft(){
+        MyWorld world = (MyWorld) getWorld();
+        TBulletleft tbulletleft = new TBulletleft();
+        int x = getX() + 20;
+        int y = getY() -13;
+        world.addObject(tbulletleft, x, y);
     }
 }
