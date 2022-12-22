@@ -24,6 +24,7 @@ public class Tryhard extends Actor
             imagesleft[i].scale(100, 100);
         }
         setImage(images[0]);
+        
     }
     public void act()
     {

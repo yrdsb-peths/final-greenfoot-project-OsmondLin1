@@ -28,6 +28,12 @@ public class TBullet extends Actor
         int bottomX = getWorld().getWidth();
         if(getX() + 10 > bottomX) {
             world.removeObject(this);
-        } 
+        }
+        
+        if(isTouching(Gunman.class))
+        {
+            world.removeObject(this);
+            world.decreaseGlives();
+        }
     }
 }
