@@ -38,5 +38,16 @@ public class MyWorld extends World
         gunmanlives.setValue("Player 2 Lives:" + glives);
     }
     
+    public void gameOvert(){
+        Label gameOverLabelt = new Label("PLAYER 1 WINS!", 100);
+        addObject(gameOverLabelt, getWidth()/2, getHeight()/2);
+    }
+    
+    public void gameOverg(){
+        Label gameOverLabelg = new Label("PLAYER 2 WINS!", 100);
+        addObject(gameOverLabelg, getWidth()/2, getHeight()/2);
+    }
+
+    
     
 }
