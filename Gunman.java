@@ -45,6 +45,20 @@ public class Gunman extends Actor
             setLocation(getX(), getY() + 6);
         }
         
+        if(getWorld().getObjects(GBullet.class).isEmpty()){
+            if(getWorld().getObjects(GBulletleft.class).isEmpty()){
+                if(Greenfoot.isKeyDown("shift")){
+                    if(facing == "left"){
+                        spawnGBullet();
+                    }
+                    else{
+                        spawnGBulletleft();
+                    }
+                }
+        
+            }
+        }  
+        
         animate();
     }
     
@@ -63,5 +77,21 @@ public class Gunman extends Actor
             }
             animTimer.mark();
         }
+    }
+    
+    public void spawnGBullet(){
+        MyWorld world = (MyWorld) getWorld();
+        GBullet gbullet = new GBullet();
+        int x = getX() - 9;
+        int y = getY() - 34;
+        world.addObject(gbullet, x, y);
+    }
+    
+    public void spawnGBulletleft(){
+        MyWorld world = (MyWorld) getWorld();
+        GBulletleft gbulletleft = new GBulletleft();
+        int x = getX() + 35;
+        int y = getY() - 34;
+        world.addObject(gbulletleft, x, y);
     }
 }

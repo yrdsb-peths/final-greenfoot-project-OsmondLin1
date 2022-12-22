@@ -6,29 +6,29 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class GBullet extends Actor
+public class GBulletleft extends Actor
 {
     /**
      * Act - do whatever the TBullet wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public GBullet(){
-        GreenfootImage gbullet = new GreenfootImage("images/GBullet.png");
-        gbullet.scale(50, 50);
-        setImage(gbullet);
+    public GBulletleft(){
+        GreenfootImage gbulletleft = new GreenfootImage("images/GBullet.png");
+        gbulletleft.scale(50, 50);
+        gbulletleft.mirrorHorizontally();
+        setImage(gbulletleft);
         
     }
     
     public void act()
     {
-        int x = getX() + 5;
+        int x = getX() - 5;
         int y = getY();
         setLocation(x, y);
         MyWorld world = (MyWorld) getWorld();
-        int bottomX = getWorld().getWidth();
-        if(getX() + 10 > bottomX) {
+        int bottomX = 10;
+        if(getX()  < bottomX) {
             world.removeObject(this);
         } 
     }
 }
-
