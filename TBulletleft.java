@@ -29,7 +29,10 @@ public class TBulletleft extends Actor
         int bottomX = 10;
         if(getX()  < bottomX) {
             world.removeObject(this);
-        } 
+        } else if(isTouching(Gunman.class)){
+            world.removeObject(this);
+            world.decreaseGlives();
+        }
     }
 }
 
