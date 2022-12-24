@@ -29,6 +29,10 @@ public class GBullet extends Actor
         if(getX() + 10 > bottomX) {
             world.removeObject(this);
         } 
+        else if(isTouching(Tryhard.class)){
+            world.removeObject(this);
+            world.decreaseTlives();
+        }
     }
 }
 
