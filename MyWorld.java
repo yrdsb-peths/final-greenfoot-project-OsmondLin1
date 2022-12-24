@@ -39,12 +39,12 @@ public class MyWorld extends World
     }
     
     public void gameOvert(){
-        Label gameOverLabelt = new Label("PLAYER 1 WINS!", 100);
+        Label gameOverLabelt = new Label("PLAYER 1 WINS!", 120);
         addObject(gameOverLabelt, getWidth()/2, getHeight()/2);
     }
     
     public void gameOverg(){
-        Label gameOverLabelg = new Label("PLAYER 2 WINS!", 100);
+        Label gameOverLabelg = new Label("PLAYER 2 WINS!", 120);
         addObject(gameOverLabelg, getWidth()/2, getHeight()/2);
     }
 

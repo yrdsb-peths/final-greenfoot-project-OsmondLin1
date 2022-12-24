@@ -34,5 +34,9 @@ public class GBulletleft extends Actor
             world.removeObject(this);
             world.decreaseTlives();
         }
+        if(world.tlives < 1)
+        {
+            world.gameOverg();
+        }
     }
 }

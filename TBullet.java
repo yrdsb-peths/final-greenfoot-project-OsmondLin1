@@ -33,5 +33,9 @@ public class TBullet extends Actor
             world.removeObject(this);
             world.decreaseGlives();
         }
+        if(world.glives < 1)
+        {
+            world.gameOvert();
+        }
     }
 }
