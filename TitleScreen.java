@@ -17,7 +17,7 @@ public class TitleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 500, 1);
-        Label titleLabel = new Label("Raging Battlestation", 80);
+        Label titleLabel = new Label("Raging Battlestation", 85);
         titleLabel.setFillColor(Color.RED);
         addObject(titleLabel, getWidth()/2, getHeight()/2);
         
@@ -32,7 +32,8 @@ public class TitleScreen extends World
         Label playertwo = new Label("Player 2" , 30);
         addObject(playertwo, 880, 320);
         
-        
+        Label instruction = new Label("Defeat your opponent before they defeat you!", 35);
+        addObject(instruction, getWidth()/2, 200);
     }
 
     public void act(){

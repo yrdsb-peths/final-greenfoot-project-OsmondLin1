@@ -40,11 +40,13 @@ public class MyWorld extends World
     
     public void gameOvert(){
         Label gameOverLabelt = new Label("PLAYER 1 WINS!", 120);
+        gameOverLabelt.setFillColor(Color.RED);
         addObject(gameOverLabelt, getWidth()/2, getHeight()/2);
     }
     
     public void gameOverg(){
         Label gameOverLabelg = new Label("PLAYER 2 WINS!", 120);
+        gameOverLabelg.setFillColor(Color.RED);
         addObject(gameOverLabelg, getWidth()/2, getHeight()/2);
     }
 
