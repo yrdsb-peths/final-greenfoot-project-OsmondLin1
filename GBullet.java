@@ -21,7 +21,7 @@ public class GBullet extends Actor
     
     public void act()
     {
-        int x = getX() + 5;
+        int x = getX() + 12;
         int y = getY();
         setLocation(x, y);
         MyWorld world = (MyWorld) getWorld();

@@ -29,18 +29,18 @@ public class Tryhard extends Actor
     public void act()
     {
         if(Greenfoot.isKeyDown("d")){
-            move(6);
+            move(4);
             facing = "right";
         }
         if(Greenfoot.isKeyDown("a")){
-            move(-6);
+            move(-4);
             facing = "left";
         }
         if(Greenfoot.isKeyDown("w")){
-            setLocation(getX(), getY() - 6);
+            setLocation(getX(), getY() - 4);
         }
         if(Greenfoot.isKeyDown("s")){
-            setLocation(getX(), getY() + 6);
+            setLocation(getX(), getY() + 4);
         }
         if(getWorld().getObjects(TBullet.class).isEmpty()){
             if(getWorld().getObjects(TBulletleft.class).isEmpty()){
