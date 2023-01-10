@@ -37,7 +37,7 @@ public class TBullet extends Actor
         {
             GameOver over = new GameOver();
             Greenfoot.setWorld(over);
-            over.gameOverg();
+            over.gameOvert();
         }
     }
 }
