@@ -1,18 +1,13 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class GameOver here.
+ * This is the screen that appears when one player wins. The victor will appear a label.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Osmond Lin
+ * @January 10, 2023
  */
 public class GameOver extends World
 {
-
-    /**
-     * Constructor for objects of class GameOver.
-     * 
-     */
     public GameOver()
     {    
         super(1000, 500, 1); 
