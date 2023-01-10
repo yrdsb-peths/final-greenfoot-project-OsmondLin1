@@ -8,9 +8,9 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-    public int tlives = 3;
+    public int tlives = 6;
     public Label tryhardlives;
-    public int glives = 3;
+    public int glives = 6;
     public Label gunmanlives;
     public MyWorld()
     {    
@@ -26,6 +26,8 @@ public class MyWorld extends World
         
         gunmanlives = new Label("Player 2 Lives:" + glives, 40);
         addObject(gunmanlives, 975, 25);
+        
+        
     }
     
     public void decreaseTlives(){
