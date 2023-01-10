@@ -15,7 +15,7 @@ public class TitleScreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 500, 1);
-        sound.play();
+        
         Label titleLabel = new Label("Raging Battlestation", 85);
         titleLabel.setFillColor(Color.RED);
         addObject(titleLabel, getWidth()/2, getHeight()/2);
@@ -41,6 +41,7 @@ public class TitleScreen extends World
             Greenfoot.setWorld(world);
             
         }
+        sound.play();
         
     }
     private void prepare()

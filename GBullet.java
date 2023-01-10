@@ -35,7 +35,9 @@ public class GBullet extends Actor
         }
         if(world.tlives < 1)
         {
-            world.gameOverg();
+            GameOver over = new GameOver();
+            Greenfoot.setWorld(over);
+            over.gameOverg();
         }
     }
 }
