@@ -12,6 +12,10 @@ public class Tryhard extends Actor
     GreenfootImage [] imagesleft = new GreenfootImage[4];
     SimpleTimer animTimer = new SimpleTimer();
     String facing = "right";
+    
+    /**
+     * This constructor creates an animation of player 2 facing left as default.
+     */
     public Tryhard(){
         for(int i = 0; i < images.length; i++){
             images[i] = new GreenfootImage("images/player2_idle/tile00" + i + ".png");
@@ -26,6 +30,13 @@ public class Tryhard extends Actor
         setImage(images[0]);
         
     }
+    
+    /**
+     * This method allows player 1 to move up, down, left, right
+     * It also allows player 1 to shoot a bullet left or right, depending on the direction
+     * Player 1 will only be able to have one bullet present in MyWorld
+     * The bullet disappears when it reaches the end of the screen or hits player 2.
+     */
     public void act()
     {
         if(Greenfoot.isKeyDown("d")){
@@ -60,6 +71,9 @@ public class Tryhard extends Actor
     }
     
     int i = 0;
+    /**
+     * This is the method that animates player 1.
+     */
     public void animate(){
         
         if(animTimer.millisElapsed() > 100){
@@ -78,6 +92,9 @@ public class Tryhard extends Actor
         
     }
     
+    /**
+     * This method spawns a bullet from where player 1 is standing and travels to the right.
+     */
     public void spawnTBullet(){
         MyWorld world = (MyWorld) getWorld();
         TBullet tbullet = new TBullet();
@@ -86,6 +103,9 @@ public class Tryhard extends Actor
         world.addObject(tbullet, x, y);
     }
     
+    /**
+     * This method spawns a bullet from where player 1 is standing and travels to the right.
+     */
     public void spawnTBulletleft(){
         MyWorld world = (MyWorld) getWorld();
         TBulletleft tbulletleft = new TBulletleft();

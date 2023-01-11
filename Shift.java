@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Shift extends Actor
 {
     /**
-     * Act - do whatever the Shift wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * This is the constructor for the shift key image.
      */
     public Shift(){
         GreenfootImage shift = new GreenfootImage("images/30836.png");

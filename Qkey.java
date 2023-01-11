@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Qkey extends Actor
 {
     /**
-     * Act - do whatever the Qkey wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * This is the constructor for the qKey image.
      */
     public Qkey(){
         GreenfootImage qkey = new GreenfootImage("images/q-key.png");

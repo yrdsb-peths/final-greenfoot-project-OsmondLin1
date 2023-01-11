@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class TBullet extends Actor
 {
     /**
-     * Act - do whatever the TBullet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * This constructor creates a greenfoot image of a bullet that shoots right
      */
     public TBullet(){
         GreenfootImage tbullet = new GreenfootImage("images/TBullet.png");
@@ -19,6 +18,11 @@ public class TBullet extends Actor
         
     }
     
+    /**
+     * This method allows player 1's bullet to appear and travel right
+     * When the bullet touches player 2, player 2 loses 1 life
+     * When player 2's lives reach 0, player 1 wins and the gameover screen appears.
+     */
     public void act()
     {
         int x = getX() + 17;

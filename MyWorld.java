@@ -12,6 +12,14 @@ public class MyWorld extends World
     public Label tryhardlives;
     public int glives = 6;
     public Label gunmanlives;
+    
+    /**
+     * This is the constructor for the main screen where player 1 and player 2 battle each other
+     * Player 1 starts on the left of the screen while facing right
+     * Player 2 starts on the right of the screen while facing left
+     * The top left displays player 1's lives
+     * The top right displays player 2's lives.
+     */
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -30,11 +38,17 @@ public class MyWorld extends World
         
     }
     
+    /**
+     * This method takes a life from player 1.
+     */
     public void decreaseTlives(){
         tlives--;
         tryhardlives.setValue("Player 1 Lives:" + tlives);
     }
     
+    /**
+     * This method takes a life from player 2.
+     */
     public void decreaseGlives(){
         glives--;
         gunmanlives.setValue("Player 2 Lives:" + glives);

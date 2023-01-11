@@ -11,6 +11,11 @@ public class TitleScreen extends World
 
     GreenfootSound sound = new GreenfootSound("sounds/battlemusic.mp3");
     
+    /**
+     * This is the constructor for the titlescreen
+     * The name of the game, "Raging Battlestation", is displayed in the center
+     * Labels and images are used to help the players understand how the game works.
+     */
     public TitleScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
@@ -34,7 +39,11 @@ public class TitleScreen extends World
         Label instruction = new Label("Defeat your opponent before they defeat you!", 35);
         addObject(instruction, getWidth()/2, 200);
     }
-
+    
+    /**
+     * This method sets the world to the main battle screen when the space bar is pressed
+     * Battle music will start playing
+     */
     public void act(){
         if(Greenfoot.isKeyDown("space")){
             MyWorld world = new MyWorld();
@@ -44,6 +53,10 @@ public class TitleScreen extends World
         sound.play();
         
     }
+    
+    /**
+     * This method sets the images in the titlescreen.
+     */
     private void prepare()
     {
         Tryhard tryhard = new Tryhard();

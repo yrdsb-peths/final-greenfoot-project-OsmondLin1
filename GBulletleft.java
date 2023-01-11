@@ -9,8 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class GBulletleft extends Actor
 {
     /**
-     * Act - do whatever the TBullet wants to do. This method is called whenever
-     * the 'Act' or 'Run' button gets pressed in the environment.
+     * This constructor creates a greenfoot image of a bullet that shoots left
      */
     public GBulletleft(){
         GreenfootImage gbulletleft = new GreenfootImage("images/GBullet.png");
@@ -20,6 +19,11 @@ public class GBulletleft extends Actor
         
     }
     
+    /**
+     * This method allows player 2's bullet to appear and travel left
+     * When the bullet touches player 1, player 1 loses 1 life
+     * When player 1's lives reach 0, player 2 wins and the gameover screen appears.
+     */
     public void act()
     {
         int x = getX() - 17;

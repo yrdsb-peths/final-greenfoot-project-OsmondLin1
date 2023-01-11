@@ -13,6 +13,9 @@ public class Gunman extends Actor
     SimpleTimer animTimer = new SimpleTimer();
     String facing = "right";
     
+    /**
+     * This constructor creates an animation of player 1 facing right as default.
+     */
     public Gunman(){
         for(int i = 0; i < photos.length; i++){
             photos[i] = new GreenfootImage("images/player1_idle/tile00" + i + "-transformed.png");
@@ -28,6 +31,13 @@ public class Gunman extends Actor
         setImage(photos[0]);
         
     }
+    
+    /**
+     * This method allows player 2 to move up, down, left, right
+     * It also allows player 2 to shoot a bullet left or right, depending on the direction
+     * Player 2 will only be able to have one bullet present in MyWorld
+     * The bullet disappears when it reaches the end of the screen or hits player 1.
+     */
     public void act()
     {
         if(Greenfoot.isKeyDown("Right")){
@@ -63,6 +73,9 @@ public class Gunman extends Actor
     }
     
     int i = 0;
+    /**
+     * This is the method that animates player 2.
+     */
     public void animate(){
         
         if(animTimer.millisElapsed() > 100){
@@ -79,6 +92,9 @@ public class Gunman extends Actor
         }
     }
     
+    /**
+     * This method spawns a bullet from where player 2 is standing and travels to the right.
+     */
     public void spawnGBullet(){
         MyWorld world = (MyWorld) getWorld();
         GBullet gbullet = new GBullet();
@@ -87,6 +103,9 @@ public class Gunman extends Actor
         world.addObject(gbullet, x, y);
     }
     
+    /**
+     * This method spawns a bullet from where player 2 is standing and travels to the left.
+     */
     public void spawnGBulletleft(){
         MyWorld world = (MyWorld) getWorld();
         GBulletleft gbulletleft = new GBulletleft();
