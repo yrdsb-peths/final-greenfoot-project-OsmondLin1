@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Gunman here.
+ * This is the class of player 2.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Osmond Lin 
+ * @January 10, 2023
  */
 public class Gunman extends Actor
 {

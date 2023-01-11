@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Shift here.
+ * This is the image of the shift key that appears in the titlescreen.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Osmond Lin
+ * @January 10, 2023
  */
 public class Shift extends Actor
 {

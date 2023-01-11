@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Qkey here.
+ * This is the qKey image that appears in the titlescreen.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Osmond Lin 
+ * @January 10, 2023
  */
 public class Qkey extends Actor
 {

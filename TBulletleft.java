@@ -1,10 +1,10 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class TBullet here.
+ * This is the greenfoot image of the bullet player 2 shoots to the left.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @Osmond Lin
+ * @January 10, 2023
  */
 public class TBulletleft extends Actor
 {
