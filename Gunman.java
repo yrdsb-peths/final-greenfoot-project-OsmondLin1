@@ -12,8 +12,9 @@ public class Gunman extends Actor
     GreenfootImage [] photosleft = new GreenfootImage[5];
     SimpleTimer animTimer = new SimpleTimer();
     String facing = "right";
+    GreenfootSound bullet = new GreenfootSound("sounds/gunshot.mp3");
     
-    /**
+    /*
      * This constructor creates an animation of player 1 facing right as default.
      */
     public Gunman(){
@@ -60,9 +61,11 @@ public class Gunman extends Actor
                 if(Greenfoot.isKeyDown("shift")){
                     if(facing == "left"){
                         spawnGBullet();
+                        bullet.play();
                     }
                     else{
                         spawnGBulletleft();
+                        bullet.play();
                     }
                 }
         

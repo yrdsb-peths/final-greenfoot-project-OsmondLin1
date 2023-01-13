@@ -12,6 +12,7 @@ public class Tryhard extends Actor
     GreenfootImage [] imagesleft = new GreenfootImage[4];
     SimpleTimer animTimer = new SimpleTimer();
     String facing = "right";
+    GreenfootSound bullet = new GreenfootSound("sounds/gunshot.mp3");
     
     /**
      * This constructor creates an animation of player 2 facing left as default.
@@ -58,9 +59,11 @@ public class Tryhard extends Actor
                 if(Greenfoot.isKeyDown("q")){
                     if(facing == "left"){
                         spawnTBulletleft();
+                        bullet.play();
                     }
                     else{
                         spawnTBullet();
+                        bullet.play();
                     }
                 }
         
