@@ -26,7 +26,7 @@ public class GBulletleft extends Actor
      */
     public void act()
     {
-        int x = getX() - 17;
+        int x = getX() - 25;
         int y = getY();
         setLocation(x, y);
         MyWorld world = (MyWorld) getWorld();
