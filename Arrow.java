@@ -16,8 +16,4 @@ public class Arrow extends Actor
         arrow.scale(115, 72);
         setImage(arrow);
     }
-    public void act()
-    {
-        // Add your action code here.
-    }
 }

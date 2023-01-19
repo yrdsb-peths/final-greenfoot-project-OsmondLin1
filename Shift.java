@@ -16,8 +16,4 @@ public class Shift extends Actor
         shift.scale(100,60);
         setImage(shift);
     }
-    public void act()
-    {
-        // Add your action code here.
-    }
 }
