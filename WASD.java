@@ -16,8 +16,4 @@ public class WASD extends Actor
         wasd.scale(100, 100);
         setImage(wasd);
     }
-    public void act()
-    {
-        // Add your action code here.
-    }
 }

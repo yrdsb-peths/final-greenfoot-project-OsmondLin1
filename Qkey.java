@@ -16,8 +16,4 @@ public class Qkey extends Actor
         qkey.scale(60, 60);
         setImage(qkey);
     }
-    public void act()
-    {
-        // Add your action code here.
-    }
 }
