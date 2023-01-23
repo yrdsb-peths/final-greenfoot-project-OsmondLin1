@@ -8,7 +8,10 @@ Start the game by pressing the space bar after both players have read the instru
 
 Works Cited
 https://cloudconvert.com/
+
 https://erase.bg/
+
 https://www.codeandweb.com/free-sprite-sheet-packer
+
 https://wave.video/convert/youtube-to-mp4
 
